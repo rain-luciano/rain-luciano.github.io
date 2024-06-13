@@ -11,7 +11,7 @@ website:
       - CV.qmd
 format:
   html:
-    theme: Zephyr
+    theme: lux
     css: styles.css
     toc: true
 

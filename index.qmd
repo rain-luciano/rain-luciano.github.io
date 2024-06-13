@@ -1,5 +1,7 @@
 ---
 title: "Rain Luciano"
+subtitle: "Data Viz | Power BI | R"
+toc: false
 image: Self.PNG
 about:
   template: trestles
@@ -14,10 +16,11 @@ about:
         href: https://ph.linkedin.com/in/rain-luciano-054096144?trk=org-employees
 ---
 
-#### About Me
+### About Me
 
-I am a Data Visualization Engineer with a focus on Power BI. Using my proficiency in dashboard UI/UX design and Power BI best practices, I find fulfillment in bridging the gap between non-technical individuals and data. Let's collaborate on transforming data into actionable insights and compelling stories.
+I am a Data Visualization Engineer with a specialization on Power BI. Using my proficiency in dashboard UI/UX design and Power BI best practices, I find fulfillment in bridging the gap between non-technical individuals and data. Let's collaborate on transforming data into actionable insights and compelling stories.
 
-#### Background
+### Background
 
-I graduated from Ateneo de Manila University in 2022 with a Bachelor's and Master's degree in Applied Mathematics with Specialization in Mathematical Finance (AMF). I am currently a Data Visualization Engineer at [LENA - Lately, Everything Needs Analytics](https://www.lena.com.ph/).
+I graduated from Ateneo de Manila University in 2022 with a Bachelor's and Master's degree in Applied Mathematics Major in Mathematical Finance (AMF). I am currently a Data Visualization Engineer at [LENA - Lately, Everything Needs Analytics](https://www.lena.com.ph/).
+
