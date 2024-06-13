@@ -1,0 +1,10 @@
+---
+title: "CV"
+editor: visual
+---
+
+### Work Experience
+
+-   Home Credit
+
+-   LENA

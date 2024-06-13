@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "rain-luciano.github.io"
+  title: "Rain Luciano"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-
+      - CV.qmd
 format:
   html:
     theme: cosmo
