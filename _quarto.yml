@@ -8,11 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - CV.qmd
 format:
   html:
-    theme: cosmo
+    theme: Zephyr
     css: styles.css
     toc: true
 
