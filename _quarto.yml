@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - CV.qmd
+      - resume.qmd
 format:
   html:
     theme: lux
