@@ -1,12 +1,55 @@
 ---
-title: "CV"
+title: "Resume"
+subtitle: "Contact me at (+63) 9293402425 or allysonrhaneluciano@gmail.com"
 editor: visual
 ---
 
-### Career Objective
+# Experience
 
-### Experience
+#### Data Visualization Engineer
 
-### Education
+##### LENA - Lately, Everything Needs Analytics \| September 2023 - Present
 
-### Skills
+-   I specialize in designing user-friendly dashboards for LENA clients, adhering to industry-standard practices. I have also introduced clients to the Microsoft Fabric environment, implementing Power BI Service tasks like Dataflows, Row Level Security, and data refresh functionalities to aid them in establishing a structure akin to a warehouse.
+
+-   I also focus on optimizing and elevating Power BI dashboards to enhance their functionality to a more advanced level, making use of tools like Performance Analyzer and Tabular Editor.
+
+#### Digital Marketing Analyst
+
+##### Home Credit Philippines \| October 2022 - July 2023
+
+-   I developed and implemented the ETL processes to consolidate data from diverse sources including Appsflyer, Google Analytics, Meta Business Suite, Tiktok Ads, and Google Ads. This culminated in the creation of a comprehensive Power BI dashboard for the digital marketing team which enabled real-time monitoring and actionable insights for informed decision-making.
+
+-   I also developed and maintained SQL queries to construct an audience pool tailored for advertising purposes.
+
+# Education
+
+#### Masters in Applied Mathematics Major in Mathematical Finance \| 2022
+
+-   I worked with the Market & Liquidity Risk Quantitative Analysis team of Metropolitan Bank & Trust Company to forecast BVAL interest rates using traditional statistical models and machine learning models.
+
+    -   Statistical models include: Autoregressive Integrated Moving Average Model, Vector Autoregression, Generalized Autoregressive Conditional Heteroskedasticity model, and the Nelson Siegel Model
+
+    -   Machine learning models include: *k*-Nearest Neighbors, Neural Networks, and Random Forest
+
+#### Bachelor of Science in Applied Mathematics with Specialization in Mathematical Finance \| 2021
+
+# Skills
+
+#### Software and Platforms
+
+-   R
+
+-   SQL
+
+-   Power BI desktop and service
+
+-   Microsoft Excel
+
+-   Meta Business Suite
+
+-   TikTok Ads
+
+-   Google Analytics, Google Ads
+
+-   Appsflyer

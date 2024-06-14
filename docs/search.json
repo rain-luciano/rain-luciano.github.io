@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Rain Luciano",
     "section": "",
-    "text": "About Me\nI am a Data Visualization Engineer with a specialization on Power BI. Using my proficiency in dashboard UI/UX design and Power BI best practices, I find fulfillment in bridging the gap between non-technical individuals and data. Let’s collaborate on transforming data into actionable insights and compelling stories.\n\n\nBackground\nI graduated from Ateneo de Manila University in 2022 with a Bachelor’s and Master’s degree in Applied Mathematics Major in Mathematical Finance (AMF). I am currently a Data Visualization Engineer at LENA - Lately, Everything Needs Analytics."
+    "text": "About Me\nHey, thanks for checking my website out!\nI am a Data Visualization Engineer with a specialization on Power BI. Using my proficiency in dashboard UI/UX design and Power BI best practices, I find fulfillment in bridging the gap between non-technical individuals and data.\nLet’s collaborate on transforming data into actionable insights and compelling stories.\n\n\nBackground\nI graduated from Ateneo de Manila University with a Bachelor’s (2021) and Master’s (2022) degree in Applied Mathematics Major in Mathematical Finance. I am currently a Data Visualization Engineer at LENA - Lately, Everything Needs Analytics."
   },
   {
     "objectID": "about.html",
@@ -16,8 +16,8 @@
   {
     "objectID": "CV.html",
     "href": "CV.html",
-    "title": "CV",
+    "title": "Resume",
     "section": "",
-    "text": "Work Experience\n\nHome Credit\nLENA"
+    "text": "Experience\n\nData Visualization Engineer\n\nLENA - Lately, Everything Needs Analytics | September 2023 - Present\n\nI specialize in designing user-friendly dashboards for LENA clients, adhering to industry-standard practices. I have also introduced clients to the Microsoft Fabric environment, implementing Power BI Service tasks like Dataflows, Row Level Security, and data refresh functionalities to aid them in establishing a structure akin to a warehouse.\nI also focus on optimizing and elevating Power BI dashboards to enhance their functionality to a more advanced level, making use of tools like Performance Analyzer and Tabular Editor.\n\n\n\n\nDigital Marketing Analyst\n\nHome Credit Philippines | October 2022 - July 2023\n\nI developed and implemented the ETL processes to consolidate data from diverse sources including Appsflyer, Google Analytics, Meta Business Suite, Tiktok Ads, and Google Ads. This culminated in the creation of a comprehensive Power BI dashboard for the digital marketing team which enabled real-time monitoring and actionable insights for informed decision-making.\nI also developed and maintained SQL queries to construct an audience pool tailored for advertising purposes.\n\n\n\n\n\nEducation\n\nMasters in Applied Mathematics Major in Mathematical Finance | 2022\n\nI worked with the Market & Liquidity Risk Quantitative Analysis team of Metropolitan Bank & Trust Company to forecast BVAL interest rates using traditional statistical models and machine learning models.\n\nStatistical models include: Autoregressive Integrated Moving Average Model, Vector Autoregression, Generalized Autoregressive Conditional Heteroskedasticity model, and the Nelson Siegel Model\nMachine learning models include: k-Nearest Neighbors, Neural Networks, and Random Forest\n\n\n\n\nBachelor of Science in Applied Mathematics with Specialization in Mathematical Finance | 2021\n\n\n\nSkills\n\nSoftware and Platforms\n\nR\nSQL\nPower BI desktop and service\nMicrosoft Excel\nMeta Business Suite\nTikTok Ads\nGoogle Analytics, Google Ads\nAppsflyer"
   }
 ]
