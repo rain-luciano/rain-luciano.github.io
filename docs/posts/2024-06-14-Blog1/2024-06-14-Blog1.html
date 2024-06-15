@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rain Luciano">
+<meta name="dcterms.date" content="2024-06-15">
+<meta name="description" content="If you’ve ever wanted to rage delete Power BI, then here are some learnings from an optimization project my team did that might help you.">
 
-<title>Rain Luciano - Resume</title>
+<title>Rain Luciano - A Few Ways to Fix Your Slow Power BI Dashboard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,17 +71,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rain Luciano</span>
     </a>
   </div>
@@ -89,12 +92,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./CV.html" aria-current="page"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -104,7 +111,43 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">A Few Ways to Fix Your Slow Power BI Dashboard</h1>
+                  <div>
+        <div class="description">
+          If you’ve ever wanted to rage delete Power BI, then here are some learnings from an optimization project my team did that might help you.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Power BI</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rain Luciano </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 15, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -112,94 +155,100 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#experience" id="toc-experience" class="nav-link active" data-scroll-target="#experience">Experience</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
+  <li><a href="#why-is-your-dashboard-taking-forever" id="toc-why-is-your-dashboard-taking-forever" class="nav-link active" data-scroll-target="#why-is-your-dashboard-taking-forever">Why is your dashboard taking forever?</a>
+  <ul class="collapse">
+  <li><a href="#the-data-model-side" id="toc-the-data-model-side" class="nav-link" data-scroll-target="#the-data-model-side">The Data Model Side</a></li>
+  <li><a href="#the-visual-side" id="toc-the-visual-side" class="nav-link" data-scroll-target="#the-visual-side">The Visual Side</a></li>
+  </ul></li>
+  <li><a href="#how-can-i-fix-it" id="toc-how-can-i-fix-it" class="nav-link" data-scroll-target="#how-can-i-fix-it">How can I fix it?</a></li>
+  <li><a href="#helpful-resources" id="toc-helpful-resources" class="nav-link" data-scroll-target="#helpful-resources">Helpful resources?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Resume</h1>
-<p class="subtitle lead">Contact me at (+63) 9293402425 or allysonrhaneluciano@gmail.com</p>
+
+
+
+
+<p>According to Cole Nussbaumer Knaflic in her book “Storytelling with Data”, an individual only has around 3-8 seconds to decide whether to continue to look at what you’ve put in front of them or direct their attention to something else.</p>
+<p>I believe this logic can be applied to dashboards. Having a slow dashboard can essentially make it useless. When the end-user decides to open it and it takes at least 8 seconds to load, or when the user changes the slicer and it takes forever to show the results, then they most likely will redirect their attention to doing another task, or worse, <em>analyze in Excel</em>.</p>
+<p>When this happens, throwing away this original dashboard is not the only solution (though I have been tempted to do this several times, so I feel you). An already existing dashboard can be elevated, and even made faster. However, in order to do this, we first need to figure out why the dashboard is slow.</p>
+<section id="why-is-your-dashboard-taking-forever" class="level1">
+<h1>Why is your dashboard taking forever?</h1>
+<p>In our project, we found that there are two aspects of your dashboard that can cause sub-optimal performance: the <em>data model</em> side and the <em>visual</em> side.</p>
+<section id="the-data-model-side" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-model-side">The Data Model Side</h2>
+<ul>
+<li><p>Check your <strong>schema</strong>. Power BI is more optimized for a <strong>star schema</strong> since the dimensions are helpful for filtering and grouping, while the fact table is for summarizing, all in all improving <strong>aggregation</strong>. Having a flat file is still acceptable but only for small data sets. If you are dealing with large volumes of data (ex. each row is a transaction, and there can be millions of transactions in a day) then a flat file just won’t cut it. Its performance and refresh is a lot slower, and maintenance will be more difficult down the line.</p></li>
+<li><p>Do you have <strong>many-to-many</strong> relationships? Having this kind of relationship means that the two data sets you are connecting have duplicate values. The problem with this is it introduces ambiguity and may produce incorrect results (ex. in choosing an option from the slicer, from which table will the dashboard show the value?). This can also lead to excessive computing resources since the program will compute against multiple values across multiple tables.</p></li>
+<li><p>Look at your <strong>Power Query</strong> <strong>transformations</strong>. Some particular heavy transformations are <strong>merge</strong> or <strong>append</strong>. Doing this is not a problem in it of itself, especially if your data set is not at all huge. However, doing merges and appends <em>several times</em> with <em>large</em> <em>data volumes</em> can definitely contribute to slow performance.</p></li>
+<li><p>Are your <strong>DAX queries complicated</strong>? A heavily nested SWITCH statements, for example, will definitely slow down your dashboard as a measure has to re-calculate every time you interact with a report.</p></li>
+<li><p>Similarly, <strong>calculated tables and columns</strong> are also not ideal, as these have to be re-calculated every time you refresh.</p></li>
+<li><p>Overall just making your data model large by <strong>retaining unnecessary tables and columns</strong> can cause a slow dashboard.</p></li>
+</ul>
+</section>
+<section id="the-visual-side" class="level2">
+<h2 class="anchored" data-anchor-id="the-visual-side">The Visual Side</h2>
+<ul>
+<li><p><strong>How many visuals do you actually need?</strong> For example, you have 3 card visuals with the same complex DAX measure filtered to different categories. The DAX measure and the visuals attached to it will render <em>thrice</em>. If the user decides to change the date slicer, then it will re-render <em>again</em>.</p></li>
+<li><p><strong>Other visual elements</strong> like text boxes and shapes have a negligible impact on the report. However, having <em>lots</em> of them could slow down page refresh since it’s also rendering other things at once–i.e.&nbsp;your DAX queries and main data visuals.</p></li>
+</ul>
+<p>For the next bullet points, I find that these do not affect dashboard performance necessarily. As a developer, however, these can get frustrating in terms of report navigation and maintenance:</p>
+<ul>
+<li><p><strong>Custom visuals</strong> can get tricky. I find that sometimes, the visuals won’t render properly if the DAX measure is not in decimal point for example.</p></li>
+<li><p>Having a <strong>large volume of pages</strong> can impact PBIX file size and can impede your development process. How do you navigate and maintain 100+ pages? (Not-so) Fun fact: when I add a new page, it goes towards the <em>end</em>. So if I want to put this new page at the beginning, I have to keep dragging this page until it reaches where I want it to be, which is really time-consuming.</p></li>
+<li><p>Having <strong>several bookmarks</strong> is fine, but only if you have a defined naming convention for them. Imagine maintaining bookmarks of a report with 100+ pages!</p></li>
+</ul>
+<p>I would also like to point out that while optimizing a dashboard with complex DAX measures, a sub-optimal data model with 90 million rows, 100+ pages, and several bookmarks, I was ultimately unable to open my file. This makes optimization impossible, rendering the hard work of the previous developers to be useless.</p>
+</section>
+</section>
+<section id="how-can-i-fix-it" class="level1">
+<h1>How can I fix it?</h1>
+<p>For the data model side, here’s a principle that you should always take to heart:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="experience" class="level1">
-<h1>Experience</h1>
-<section id="data-visualization-engineer" class="level4">
-<h4 class="anchored" data-anchor-id="data-visualization-engineer">Data Visualization Engineer</h4>
-<section id="lena---lately-everything-needs-analytics-september-2023---present" class="level5">
-<h5 class="anchored" data-anchor-id="lena---lately-everything-needs-analytics-september-2023---present">LENA - Lately, Everything Needs Analytics | September 2023 - Present</h5>
+<div class="callout-title-container flex-fill">
+Roche’s Maxim of Data Transformation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Data should be transformed as far upstream as possible, and as far downstream as necessary.</p>
+</div>
+</div>
 <ul>
-<li><p>I specialize in designing user-friendly dashboards for LENA clients, adhering to industry-standard practices. I have also introduced clients to the Microsoft Fabric environment, implementing Power BI Service tasks like Dataflows, Row Level Security, and data refresh functionalities to aid them in establishing a structure akin to a warehouse.</p></li>
-<li><p>I also focus on optimizing and elevating Power BI dashboards to enhance their functionality to a more advanced level, making use of tools like Performance Analyzer and Tabular Editor.</p></li>
-</ul>
-</section>
-</section>
-<section id="digital-marketing-analyst" class="level4">
-<h4 class="anchored" data-anchor-id="digital-marketing-analyst">Digital Marketing Analyst</h4>
-<section id="home-credit-philippines-october-2022---july-2023" class="level5">
-<h5 class="anchored" data-anchor-id="home-credit-philippines-october-2022---july-2023">Home Credit Philippines | October 2022 - July 2023</h5>
+<li><p>Separate dashboards; remember use cases</p></li>
+<li><p>Remove unnecessary columns</p></li>
+<li><p>Tools: tabular editor and dax studio + smartbi</p>
 <ul>
-<li><p>I developed and implemented the ETL processes to consolidate data from diverse sources including Appsflyer, Google Analytics, Meta Business Suite, Tiktok Ads, and Google Ads. This culminated in the creation of a comprehensive Power BI dashboard for the digital marketing team which enabled real-time monitoring and actionable insights for informed decision-making.</p></li>
-<li><p>I also developed and maintained SQL queries to construct an audience pool tailored for advertising purposes.</p></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="education" class="level1">
-<h1>Education</h1>
-<section id="masters-in-applied-mathematics-major-in-mathematical-finance-2022" class="level4">
-<h4 class="anchored" data-anchor-id="masters-in-applied-mathematics-major-in-mathematical-finance-2022">Masters in Applied Mathematics Major in Mathematical Finance | 2022</h4>
-<ul>
-<li><p>I worked with the Market &amp; Liquidity Risk Quantitative Analysis team of Metropolitan Bank &amp; Trust Company to forecast BVAL interest rates using traditional statistical models and machine learning models.</p>
-<ul>
-<li><p>Statistical models include: Autoregressive Integrated Moving Average Model, Vector Autoregression, Generalized Autoregressive Conditional Heteroskedasticity model, and the Nelson Siegel Model</p></li>
-<li><p>Machine learning models include: <em>k</em>-Nearest Neighbors, Neural Networks, and Random Forest</p></li>
+<li>can vary depending on device, so check</li>
 </ul></li>
+<li><p>Redesign your data model altogether. use the previous data as basis and make a new one, remap and test it out</p></li>
 </ul>
 </section>
-<section id="bachelor-of-science-in-applied-mathematics-with-specialization-in-mathematical-finance-2021" class="level4">
-<h4 class="anchored" data-anchor-id="bachelor-of-science-in-applied-mathematics-with-specialization-in-mathematical-finance-2021">Bachelor of Science in Applied Mathematics with Specialization in Mathematical Finance | 2021</h4>
-</section>
-</section>
-<section id="skills" class="level1">
-<h1>Skills</h1>
-<section id="software-and-platforms" class="level4">
-<h4 class="anchored" data-anchor-id="software-and-platforms">Software and Platforms</h4>
-<ul>
-<li><p>R</p></li>
-<li><p>SQL</p></li>
-<li><p>Power BI desktop and service</p></li>
-<li><p>Microsoft Excel</p></li>
-<li><p>Meta Business Suite</p></li>
-<li><p>TikTok Ads</p></li>
-<li><p>Google Analytics, Google Ads</p></li>
-<li><p>Appsflyer</p></li>
-</ul>
+<section id="helpful-resources" class="level1">
+<h1>Helpful resources?</h1>
+<p>You can read about star schemas here <a href="https://learn.microsoft.com/en-us/power-bi/guidance/star-schema" class="uri">https://learn.microsoft.com/en-us/power-bi/guidance/star-schema</a></p>
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{luciano2024,
+  author = {Luciano, Rain},
+  title = {A {Few} {Ways} to {Fix} {Your} {Slow} {Power} {BI}
+    {Dashboard}},
+  date = {2024-06-15},
+  url = {https://rain-luciano.github.io/posts/2024-06-14-Blog1/2024-06-14-Blog1.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-luciano2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Luciano, Rain. 2024. <span>“A Few Ways to Fix Your Slow Power BI
+Dashboard.”</span> June 15, 2024. <a href="https://rain-luciano.github.io/posts/2024-06-14-Blog1/2024-06-14-Blog1.html">https://rain-luciano.github.io/posts/2024-06-14-Blog1/2024-06-14-Blog1.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

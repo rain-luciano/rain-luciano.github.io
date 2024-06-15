@@ -1,6 +1,0 @@
----
-title: "Blog"
-editor: visual
----
-
-Under construction!

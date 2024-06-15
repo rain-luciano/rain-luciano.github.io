@@ -53,3 +53,5 @@ editor: visual
 -   Google Analytics, Google Ads
 
 -   Appsflyer
+
+-   LaTeX

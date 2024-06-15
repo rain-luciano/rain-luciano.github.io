@@ -9,10 +9,10 @@ website:
       - href: index.qmd
         text: Home
       - resume.qmd
-      - blog.qmd
+      - posts.qmd
 format:
   html:
-    theme: lux
+    theme: sandstone
     css: styles.css
     toc: true
 

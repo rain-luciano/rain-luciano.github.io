@@ -1,0 +1,75 @@
+---
+title: "A Few Ways to Fix Your Slow Power BI Dashboard"
+description: "If you've ever wanted to rage delete Power BI, then here are some learnings from an optimization project my team did that might help you."
+author: Rain Luciano
+date: 06-15-2024
+categories: [Power BI] # self-defined categories
+citation: 
+  url: https://rain-luciano.github.io/posts/2024-06-14-Blog1/2024-06-14-Blog1.html
+image: Loading.PNG
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+According to Cole Nussbaumer Knaflic in her book "Storytelling with Data", an individual only has around 3-8 seconds to decide whether to continue to look at what you've put in front of them or direct their attention to something else.
+
+I believe this logic can be applied to dashboards. Having a slow dashboard can essentially make it useless. When the end-user decides to open it and it takes at least 8 seconds to load, or when the user changes the slicer and it takes forever to show the results, then they most likely will redirect their attention to doing another task, or worse, *analyze in Excel*.
+
+When this happens, throwing away this original dashboard is not the only solution (though I have been tempted to do this several times, so I feel you). An already existing dashboard can be elevated, and even made faster. However, in order to do this, we first need to figure out why the dashboard is slow.
+
+# Why is your dashboard taking forever?
+
+In our project, we found that there are two aspects of your dashboard that can cause sub-optimal performance: the *data model* side and the *visual* side.
+
+## The Data Model Side
+
+-   Check your **schema**. Power BI is more optimized for a **star schema** since the dimensions are helpful for filtering and grouping, while the fact table is for summarizing, all in all improving **aggregation**. Having a flat file is still acceptable but only for small data sets. If you are dealing with large volumes of data (ex. each row is a transaction, and there can be millions of transactions in a day) then a flat file just won't cut it. Its performance and refresh is a lot slower, and maintenance will be more difficult down the line.
+
+-   Do you have **many-to-many** relationships? Having this kind of relationship means that the two data sets you are connecting have duplicate values. The problem with this is it introduces ambiguity and may produce incorrect results (ex. in choosing an option from the slicer, from which table will the dashboard show the value?). This can also lead to excessive computing resources since the program will compute against multiple values across multiple tables.
+
+-   Look at your **Power Query** **transformations**. Some particular heavy transformations are **merge** or **append**. Doing this is not a problem in it of itself, especially if your data set is not at all huge. However, doing merges and appends *several times* with *large* *data volumes* can definitely contribute to slow performance.
+
+-   Are your **DAX queries complicated**? A heavily nested SWITCH statements, for example, will definitely slow down your dashboard as a measure has to re-calculate every time you interact with a report.
+
+-   Similarly, **calculated tables and columns** are also not ideal, as these have to be re-calculated every time you refresh.
+
+-   Overall just making your data model large by **retaining unnecessary tables and columns** can cause a slow dashboard.
+
+## The Visual Side
+
+-   **How many visuals do you actually need?** For example, you have 3 card visuals with the same complex DAX measure filtered to different categories. The DAX measure and the visuals attached to it will render *thrice*. If the user decides to change the date slicer, then it will re-render *again*.
+
+-   **Other visual elements** like text boxes and shapes have a negligible impact on the report. However, having *lots* of them could slow down page refresh since it's also rendering other things at once–i.e. your DAX queries and main data visuals.
+
+For the next bullet points, I find that these do not affect dashboard performance necessarily. As a developer, however, these can get frustrating in terms of report navigation and maintenance:
+
+-   **Custom visuals** can get tricky. I find that sometimes, the visuals won't render properly if the DAX measure is not in decimal point for example.
+
+-   Having a **large volume of pages** can impact PBIX file size and can impede your development process. How do you navigate and maintain 100+ pages? (Not-so) Fun fact: when I add a new page, it goes towards the *end*. So if I want to put this new page at the beginning, I have to keep dragging this page until it reaches where I want it to be, which is really time-consuming.
+
+-   Having **several bookmarks** is fine, but only if you have a defined naming convention for them. Imagine maintaining bookmarks of a report with 100+ pages!
+
+I would also like to point out that while optimizing a dashboard with complex DAX measures, a sub-optimal data model with 90 million rows, 100+ pages, and several bookmarks, I was ultimately unable to open my file. This makes optimization impossible, rendering the hard work of the previous developers to be useless.
+
+# How can I fix it?
+
+For the data model side, here's a principle that you should always take to heart:
+
+::: callout-tip
+## Roche's Maxim of Data Transformation
+
+Data should be transformed as far upstream as possible, and as far downstream as necessary.
+:::
+
+-   Separate dashboards; remember use cases
+
+-   Remove unnecessary columns
+
+-   Tools: tabular editor and dax studio + smartbi
+
+    -   can vary depending on device, so check
+
+-   Redesign your data model altogether. use the previous data as basis and make a new one, remap and test it out
+
+# Helpful resources?
+
+You can read about star schemas here <https://learn.microsoft.com/en-us/power-bi/guidance/star-schema>
