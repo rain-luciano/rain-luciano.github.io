@@ -86,7 +86,7 @@ After you are done putting your calculations upstream, consider comparing this o
 
 Performing tests can give several insights as to what to do to elevate your dashboard. In order to do this, you may use tools such as Power BI's native **Performance Analyzer**, or external tools like **DAX Studio** and **Tabular Editor**.
 
-Personally, I like to use the [Advanced Power BI Performance Analyzer](https://smartpowerbi.co.uk/2021/10/12/advanced-power-bi-performance-analyser-by-smartpowerbi/) by **SmartPowerBI**. If you're like me who has a difficult time digesting the numbers in Performance Analyzer, this tool takes the exported JSON file from Performance Analyzer and presents it visually. I discovered this tool from [Guy In A Cube's video](https://www.youtube.com/watch?v=Z-J4n9uymQ0&t=2s) and I suggest you watch it too.
+Personally, I like to use the [Advanced Power BI Performance Analyzer](https://smartpowerbi.co.uk/2021/10/12/advanced-power-bi-performance-analyser-by-smartpowerbi/) by **SmartPowerBI**. If you're like me who has a difficult time digesting the numbers in Performance Analyzer, this tool takes the exported JSON file and presents it visually. I discovered this tool from [Guy In A Cube's video](https://www.youtube.com/watch?v=Z-J4n9uymQ0&t=2s) and I suggest you watch it too.
 
 This is how my teammates and I performed the tests using this tool.
 
